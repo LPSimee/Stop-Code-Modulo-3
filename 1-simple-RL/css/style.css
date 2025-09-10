@@ -60,7 +60,21 @@ main{
 }
 
 .box{
-    padding: 20px 10px 10px 10px;
+    margin-bottom: 20px;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.box img{
+    width: 100%;
+}
+
+.box.one{
+    background-color: #f5f5dc; /* beige color */
+}
+
+.box.two{
+    background-color: #FFB8B8; /* light cherry color */
 }
 
 @media (min-width: 600px) {
