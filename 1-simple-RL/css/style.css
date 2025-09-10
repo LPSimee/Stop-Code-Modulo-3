@@ -77,6 +77,12 @@ main{
     background-color: #FFB8B8; /* light cherry color */
 }
 
+footer{
+    background-color: #8AFF8A;
+    text-align: center;
+    padding: 30px 0;
+}
+
 @media (min-width: 600px) {
     
 }
