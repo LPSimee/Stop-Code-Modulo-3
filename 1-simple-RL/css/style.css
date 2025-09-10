@@ -52,6 +52,13 @@ nav ul li:hover{
     background-color: #FFBF00; /* Amber color */
 }
 
+main{
+    background-color: #D3D3D3; /* Light gray color*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 10px;
+}
+
 @media (min-width: 600px) {
     
 }
