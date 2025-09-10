@@ -1,0 +1,8 @@
+Approccio "mobile firt"
+
+
+<600px: layoout monocolonna
+
+600px in su: layout a due colonne
+
+1024px in su: layout a tre colonne
