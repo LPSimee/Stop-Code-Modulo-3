@@ -1,1 +1,57 @@
 /* Stylesheet to for "1-simple-RL" project */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /* Roboto font imported from Google Fonts*/
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    background-color: #000080; /* Navy blue color */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px 10px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E3963E; /* Butterscotch color */
+    transition: 0.3s;
+}
+
+nav ul li a{
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li:hover{
+    background-color: #FFBF00; /* Amber color */
+}
+
+@media (min-width: 600px) {
+    
+}
