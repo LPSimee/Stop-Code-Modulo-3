@@ -96,3 +96,23 @@ footer{
         width: 49%;
     }
 }
+
+@media (min-width: 1024px) {
+    header{
+        margin-bottom: 20px;
+    }
+
+    main{
+        width: 46%;
+        margin-top: 0;
+    }
+    
+    .box{
+        width: 26%
+    }
+
+    .box.one{
+        order: -1;
+    }
+
+}
