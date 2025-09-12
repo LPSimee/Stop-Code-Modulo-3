@@ -9,15 +9,37 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     min-height: 100vh;
 }
 
-.ctn-1{
-    margin-top: 20px;
-    color: #5E4A77;
+a{
+    text-decoration: none;
 }
 
+.ctn-1{
+    width: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 20px;
+    color: 	#5e4a77; /* Mullet wine color */
+}
 
+.openPopup{
+    margin-top: 10px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 2.5px solid #5e4a77;
+    text-align: center;
+    color: #5e4a77;
+    transition: background-color 0.3s ease;
+}
+
+.openPopup:hover{
+    background-color: #5e4a77;
+    color: white;
+}
 
 #popup{
     display: flex;
@@ -33,4 +55,5 @@ body {
 
     opacity: 0;
     visibility: hidden;
+    transition: background-color 0.3s ease;
 }
