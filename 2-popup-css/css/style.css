@@ -41,12 +41,10 @@ a{
     color: white;
 }
 
-
-
 #popup{
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s linear; 
+    transition: opacity 0.3s linear;
 }
 
 #popup:target{
@@ -66,21 +64,28 @@ a{
     transition: background-color 0.3s ease;
 }
 
-#popup:target #popup-overlay {
+
+#popup:target #popup-overlay{
     visibility: visible;
     opacity: 1;
 }
 
-/* Ora, imposta il posizionamento e gli stili per il tuo popup,
-   assicurandoti che sia sopra l'overlay */
-.popup-content {
+.popup-content.ctn{
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white; /* Il colore del tuo popup */
+    background-color: white; 
     padding: 30px;
     border-radius: 8px;
-    z-index: 1001; /* Un valore più alto rispetto all'overlay */
+    border: 5px solid #5e4a77;
+    z-index: 101;
     /* Aggiungi altri stili per la dimensione, l'ombra, etc. */
+}
+
+.close-btn{
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 24px;
 }
