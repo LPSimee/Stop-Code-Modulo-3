@@ -101,3 +101,14 @@ a{
     background-color: #D3D3D3;
     transform: scale(1.1);
 }
+
+.popup-content.image{
+    width: 450px;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.popup-content.image img{
+    max-width: 100%;
+    object-fit: fill;
+}
