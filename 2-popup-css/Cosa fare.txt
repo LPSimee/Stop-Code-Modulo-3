@@ -1,1 +1,1 @@
-Per questo progetto abbiamo un tasto "Apri popup" che mostrerà o un messaggio, o un'immagine o un video. Il tutto deve essere fatto esclusivamente tramite CSS, utilizzare le pseudo classi "target" e "checked". 
+Per questo progetto abbiamo un tasto "Apri popup" che può mostrare o un messaggio, o un'immagine o un video (a nostra discrezione). Il tutto deve essere fatto esclusivamente tramite CSS, utilizzare le pseudo classi "target" e "checked". 
