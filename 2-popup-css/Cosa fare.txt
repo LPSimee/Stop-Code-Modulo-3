@@ -1,1 +1,8 @@
 Per questo progetto abbiamo un tasto "Apri popup" che può mostrare o un messaggio, o un'immagine o un video (a nostra discrezione). Il tutto deve essere fatto esclusivamente tramite CSS, utilizzare le pseudo classi "target" e "checked". 
+
+
+Struttura:
+
+- Link ancorato al container del popup
+
+- Container del popup che conterrà l'overlay(sfondo scuro), il contenuto(il testo, l'immagine oppure il video) e il tasto "x" per chiudere il popup (un altro link che ancora a nulla --> "#")
