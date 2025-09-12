@@ -18,7 +18,8 @@ a{
 }
 
 .ctn-1{
-    width: 300px;
+    width: 90%; 
+    max-width: 300px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -47,11 +48,6 @@ a{
     transition: opacity 0.3s linear;
 }
 
-#popup:target{
-    visibility: visible;
-    opacity: 1;
-}
-
 #popup-overlay{
     position: fixed;
     top: 0; left: 0;
@@ -63,12 +59,14 @@ a{
     opacity: 0;
 }
 
-#popup:target #popup-overlay{
+#popup:target, #popup:target #popup-overlay{
     visibility: visible;
     opacity: 1;
 }
 
 .popup-content.ctn{
+    max-width: 600px;
+    width: 90%;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -103,15 +101,35 @@ a{
 }
 
 .popup-content.image{
-    width: 450px;
-    min-height: 300px;
     overflow: hidden;
 }
+
 .popup-content img, .popup-content video{
     max-width: 100%;
     height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 .popup-content.image img{
-    object-fit: fill;
+    object-fit: cover;
+}
+
+@media (max-width: 600px){
+  .popup-content.ctn{
+    padding: 15px;
+  }
+
+  .close-btn{
+    top: -10px;
+    left: -10px;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 450px){
+    .ctn-1 {
+        width: 95%;
+    }
 }
