@@ -28,11 +28,11 @@ nav ul {
   margin: 10px 0;
   padding: 0;
   align-items: center;
+  gap: 0.5%;
 }
 nav ul li {
   width: 16.666667%;
   text-align: center;
-  margin-right: 0.5%;
 }
 nav ul li a {
   display: block;
@@ -45,6 +45,7 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #ffbf00;
 }
-nav ul li:last-child {
-  margin-right: 0;
+
+#hero-banner {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
