@@ -1,0 +1,10 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "\\3-icon-RL-gridFlex\\css",
+      "savePathReplacementPairs": null
+    }
+  ]
+}

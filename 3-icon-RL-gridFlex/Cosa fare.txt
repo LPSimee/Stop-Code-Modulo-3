@@ -1,0 +1,8 @@
+Realizzare il seguente layout utilizzando CSS grid e CSS flexbox (innestazione di essi consentito) dalle immagini nel materiale didattico (layout-1a, layout-1b). 
+
+
+< 768px --> monocolonna
+
+< 1024px --> doppia colonna la parte centrale
+
+> 2014pz --> tricolonna
