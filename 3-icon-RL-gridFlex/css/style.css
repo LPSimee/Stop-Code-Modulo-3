@@ -9,16 +9,22 @@ body {
 }
 
 header {
-  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   margin-top: 10px;
+  padding: 0;
+  height: 70px;
+  border: 1px solid black;
 }
 
-.img-ctn {
-  height: 60px;
+.logo-ctn {
+  height: 100%;
 }
-.img-ctn img {
-  max-width: 100%;
-  height: auto;
+.logo-ctn img {
+  max-height: 100%;
+  width: 330px;
+  object-fit: cover;
 }
 
 nav ul {
