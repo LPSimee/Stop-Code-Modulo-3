@@ -11,13 +11,16 @@ body {
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
     margin-top: 10px;
     padding: 0 20px;
     height: 70px;
     border: $bordo-base;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 .logo-ctn {
@@ -61,9 +64,22 @@ nav {
 
 #hero-banner {
     overflow: hidden;
-    img {
-        max-width: 100%;
-        display: block;
-        object-fit: cover;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin: 10px 0;
+    gap: 10px;
+    .main-content {
+        border: $bordo-base;
+        grid-column: 1 / 6 span;
+        padding: 10px;
+    }
+
+    .aside-content {
+        padding: 10px;
+        border: $bordo-base;
+        grid-column: 2 span;
     }
 }
