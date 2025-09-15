@@ -44,7 +44,7 @@ nav ul {
   gap: 0.5%;
 }
 nav ul li {
-  width: 16.666667%;
+  flex: 1;
   text-align: center;
 }
 nav ul li a {
@@ -71,7 +71,7 @@ main {
 }
 main .main-content {
   border: 1px solid black;
-  grid-column: 1/6 span;
+  grid-column: 6 span;
   padding: 10px;
 }
 main .aside-content {
@@ -82,13 +82,14 @@ main .aside-content {
 
 footer {
   border: 1px solid black;
-  padding: 10px 30px 35px 30px;
+  padding: 30px 35px;
+  margin-bottom: 10px;
 }
 footer .sprite-ctn {
   display: flex;
   gap: 20px;
 }
-footer a {
+footer .sprite-ctn a {
   display: block;
   width: 50px;
   height: 50px;
@@ -109,7 +110,53 @@ footer a {
   background: url("../images/css-sprite-round-black.png") -367px 0;
 }
 
-/* effetto hover */
 .sprite-ctn a:hover {
   transform: rotate(360deg);
+}
+
+@media (max-width: 992px) {
+  body {
+    margin: 0 50px;
+  }
+  nav ul {
+    flex-wrap: wrap;
+  }
+  main {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  main .main-content {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  main .aside-content {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+@media (max-width: 576px) {
+  body {
+    margin: 0 10px;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+    width: 100%;
+    margin-bottom: 1px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  main .aside-content:nth-of-type(2) {
+    order: 2;
+  }
+  main .aside-content:nth-of-type(3) {
+    order: 1;
+  }
+  .sprite-ctn {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */
