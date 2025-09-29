@@ -1,7 +1,7 @@
 Approccio "mobile firt"
 
 
-<600px: layoout monocolonna
+<600px: layout monocolonna
 
 600px in su: layout a due colonne
 
